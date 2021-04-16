@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-webclient-test
+
+server:
+  port: 8080
+
+address-service:
+  host: http://localhost:8081
+  path-addresses: ${address-service.host}/address
+  path-address: ${address-service.host}/address/{addressId}
